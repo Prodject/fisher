@@ -4,8 +4,5 @@ before_install:
     - sudo apt-get update
     - sudo apt-get -y install fish
 script:
-    - curl -Lo ~/.config/fish/functions/f.fish --create-dirs git.io/fisher
-    - fish -c "f --version"
-    - fish -c "f -h"
-    - fish -c "f z; f ls"
-    - fish -c "f ls-remote"
+    - curl -Lo ~/.config/fish/functions/fisher.fish --create-dirs git.io/fisher
+    - fish -c "fisher -v"
